@@ -24,6 +24,7 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authz -> authz
                         // Public endpoints
+                        .requestMatchers("/", "/status", "/favicon.ico").permitAll()
                         .requestMatchers("/api/patients/**").permitAll()
                         .requestMatchers("/api/doctors/**").permitAll()
                         .requestMatchers("/api/appointments/**").permitAll()
@@ -32,6 +33,7 @@ public class SecurityConfig {
                         .requestMatchers("/actuator/**").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()
                         .requestMatchers("/v3/api-docs/**").permitAll()
+                        .requestMatchers("/error").permitAll()
                         // All other requests need authentication
                         .anyRequest().authenticated()
                 );
