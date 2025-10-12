@@ -8,9 +8,9 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import DoctorManagement from './pages/admin/DoctorManagement';
 import DoctorDashboard from './pages/doctor/DoctorDashboard';
 import DashboardPage from './pages/DashboardPage';
-import BookAppointment from './pages/BookAppointment';
-import ViewAppointments from './pages/ViewAppointments';
-import QueueStatus from './pages/QueueStatus';
+import BookAppointment from './pages/BookAppointment.jsx';
+import ViewAppointments from './pages/ViewAppointments.jsx';
+import QueueStatus from './pages/QueueStatus.jsx';
 
 const RequireAuth = ({ children, role }) => {
   const { isAuthenticated, user, loading } = useAuth();
