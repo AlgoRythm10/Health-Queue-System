@@ -1,0 +1,39 @@
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backend (Java/Spring Boot)
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.ear
+backend/hs_err_pid*
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Frontend (Node.js/React)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
